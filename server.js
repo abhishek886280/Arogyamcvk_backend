@@ -18,7 +18,7 @@ const app = express();
 // Middleware
 // Enable CORS (Cross-Origin Resource Sharing)
 // For production, restrict origins: app.use(cors({ origin: 'https://your-netlify-domain.com' }));
-app.use(cors()); 
+app.use(cors({ origin: 'https://mcvk.netlify.app' })); 
 
 // Body Parser Middleware to handle JSON and URL-encoded data
 app.use(express.json()); // Parses incoming requests with JSON payloads
